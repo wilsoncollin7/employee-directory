@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import employees from "../../Data/employees.json";
+import React, { useContext, useState } from "react";
+import EmployeeContext from "../../utils/EmployeeContext";
 // style
 import "./style.css";
 
 function Table() {
+
+  const { employees } = useContext(EmployeeContext);
 
   const [sortedField, setSortedField] = useState(null);
 
