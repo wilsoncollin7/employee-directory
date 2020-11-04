@@ -5,8 +5,6 @@ import "./style.css";
 
 function Table() {
 
-  
-
   return (
     <table className="table table-hover table-sm">
       <thead>
