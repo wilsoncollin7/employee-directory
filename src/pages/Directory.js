@@ -4,6 +4,13 @@ import CardContainer from "../components/CardContainer/CardContainer";
 import Row from "../components/Row/Row";
 
 function Directory() {
+
+
+  function sortField() {
+    
+  }
+
+
   return(
     <div>
       <h1>Employees</h1>
