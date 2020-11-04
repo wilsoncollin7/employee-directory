@@ -1,23 +1,39 @@
-import React from "react";
-import employees from "../../employees.json";
+import React, { useState } from "react";
+import employees from "../../Data/employees.json";
 // style
 import "./style.css";
 
 function Table() {
 
+  const [sortedField, setSortedField] = useState(null);
+
+  let sortedEmployees = [...employees];
+
+  if (sortedField !== null) {
+    sortedEmployees.sort((a, b) => {
+      if (a[sortedField] < b[sortedField]) {
+        return -1;
+      }
+      if (a[sortedField] > b[sortedField]) {
+        return 1;
+      }
+      return 0;
+    });
+  }
+  
   return (
-    <table className="table table-hover table-sm">
+    <table className="table table-hover">
       <thead>
         <tr>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
+          <th scope="col"><button type="button" onClick={() => setSortedField("firstName")}>First Name</button></th>
+          <th scope="col"><button type="button" onClick={() => setSortedField("lastName")}>Last Name</button></th>
           <th scope="col">Phone</th>
           <th scope="col">Email</th>
         </tr>
       </thead>
       <tbody>
-        {employees.map(employee => (
-          <tr>
+        {sortedEmployees.map(employee => (
+          <tr key={employee.id}>
             <td>{employee.firstName}</td>
             <td>{employee.lastName}</td>
             <td>{employee.phone}</td>

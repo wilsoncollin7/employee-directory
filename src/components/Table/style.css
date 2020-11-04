@@ -5,3 +5,8 @@
 thead, tbody {
   font-size: 5rem;
 }
+
+button {
+  border: transparent;
+  background-color: transparent;
+}
