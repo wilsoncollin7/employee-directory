@@ -6,7 +6,7 @@ import Table from "../Table/Table";
 
 function Card() {
   return (
-    <div className="card">
+    <div className="card shadow">
       <div className="card-body">
         <h3>Search by name:</h3>
         <input 

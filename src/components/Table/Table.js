@@ -1,10 +1,14 @@
 import React from "react";
+import employees from "../../employees.json";
 // style
 import "./style.css";
 
 function Table() {
+
+  
+
   return (
-    <table className="table table-hover">
+    <table className="table table-hover table-sm">
       <thead>
         <tr>
           <th scope="col">First</th>
@@ -14,24 +18,14 @@ function Table() {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>(111) 111-111</td>
-          <td>email@fakeemail.com</td>
-        </tr>
-        <tr>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>(111) 111-111</td>
-          <td>email@fakeemail.com</td>
-        </tr>
-        <tr>
-          <td>Collin</td>
-          <td>Dean</td>
-          <td>(111) 111-111</td>
-          <td>email@fakeemail.com</td>
-        </tr>
+        {employees.map(employee => (
+          <tr>
+            <td>{employee.firstName}</td>
+            <td>{employee.lastName}</td>
+            <td>{employee.phone}</td>
+            <td>{employee.email}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );
