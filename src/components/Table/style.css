@@ -9,4 +9,10 @@ thead, tbody {
 button {
   border: transparent;
   background-color: transparent;
+  color: rgb(31, 49, 212);
+  font-weight: normal;
+}
+
+button:hover {
+  color: black;
 }
