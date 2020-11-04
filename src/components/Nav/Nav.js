@@ -1,8 +1,12 @@
 import React from 'react';
+// style
+import "./style.css";
 
 function Nav () {
   return (
-    <h2>this is nav</h2>
+    <nav className="navbar bg-light">
+      <span className="navbar-brand">Employee Directory</span>
+    </nav>
   );
 }
 

@@ -13,7 +13,6 @@ function App() {
       <Nav />
       <Wrapper>
         <Directory />
-        {/* <h1>This is my app!</h1> */}
       </Wrapper>
       <Footer />
     </>
