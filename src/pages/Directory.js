@@ -12,23 +12,24 @@ function Directory() {
     employeesSorted: [],
     onClick: (sortedField) => {
       setEmployees({...employees, sortedField});
-      console.log(sortedField)
     },
   });
 
-  // let sortedEmployees = [...employees];
+  let sortedEmployees = [...employeesJson];
 
-  // if (employeesState.sortedField !== null) {
-  //   sortedEmployees.sort((a, b) => {
-  //     if (a[employeesState.sortedField] < b[employeesState.sortedField]) {
-  //       return -1;
-  //     }
-  //     if (a[employeesState.sortedField] > b[employeesState.sortedField]) {
-  //       return 1;
-  //     }
-  //     return 0;
-  //   });
-  // }
+  if (employees.sortedField !== null) {
+    sortedEmployees.sort((a, b) => {
+      if (a[employees.sortedField] < b[employees.sortedField]) {
+        return -1;
+      }
+      if (a[employees.sortedField] > b[employees.sortedField]) {
+        return 1;
+      }
+      return 0;
+    });
+  }
+
+  employees.employeesSorted = sortedEmployees;
 
   return(
     <div>
