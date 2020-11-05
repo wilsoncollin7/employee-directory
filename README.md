@@ -1,7 +1,7 @@
 # Employee Directory 
   ![GitHub license](https://img.shields.io/badge/Made%20by-%40wilsoncollin7-orange) [![GitHub followers](https://img.shields.io/github/followers/wilsoncollin7.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/wilsoncollin7?tab=followers) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  This app allows a manager to filer thier employees by first or last name. The user can also sort the table alphabeticaly by first or last name. This is a simple example of how React can be used and how you can use context APIs to send data to components instead of using prop drilling :rocket:
+  This app allows a manager to filer their employees by first or last name. The user can also sort the table alphabetically by first or last name. This is a simple example of how React can be used and how you can use context APIs to send data to components instead of using prop drilling. :rocket:
 
   Here is the live app: [Employee Directory](https://directory-collin.herokuapp.com/)
 
@@ -41,11 +41,11 @@
 
   ## Usage
 
-  This project uses React and is hosted on Heroku. The styling of the page uses Bootstrap. Inside, the app is seperated into smaller components to allow future expansion. The data is sent to the child components using the EmployeeContext and the SearchContext found in utils. The functions are in the Directory.js in the pages folder.
+  This project uses React and is hosted on Heroku. The styling of the page uses Bootstrap. Inside, the app is separated into smaller components to allow future expansion. The data is sent to the child components using the EmployeeContext and the SearchContext found in utils. The functions are in the Directory.js in the pages folder.
 
   ## License
 
-  This aplication is made with the [MIT License](https://opensource.org/licenses/MIT)
+  This application is made with the [MIT License](https://opensource.org/licenses/MIT)
 
   ## Contributing
 
