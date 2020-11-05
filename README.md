@@ -6,8 +6,6 @@
   Here is the live app: [Employee Directory](https://directory-collin.herokuapp.com/)
 
   <p align="center">
-    <img src="./public/snip.JPG" width="600">
-    <br>
     <img src="./public/example.gif" width="600">
   </p>
 
