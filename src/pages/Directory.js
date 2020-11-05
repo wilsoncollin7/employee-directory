@@ -4,19 +4,16 @@ import CardContainer from "../components/CardContainer/CardContainer";
 import Row from "../components/Row/Row";
 import employeesJson from "../Data/employees.json";
 import EmployeeContext from "../utils/EmployeeContext";
+import SearchContext from "../utils/SearchContext";
 
 function Directory() {
 
   const [employees, setEmployees] = useState({
     sortedField: null,
-    searchField: "",
     employeesSorted: [],
     onClick: (sortedField) => {
       setEmployees({...employees, sortedField});
     },
-    onChange: (searchField) => {
-      setEmployees({...employees, searchField})
-    }
   });
 
   let sortedEmployees = [...employeesJson];
@@ -39,9 +36,11 @@ function Directory() {
     <div>
       <h1>Employees</h1>
       <EmployeeContext.Provider value={employees}>
-        <Row>
-          <CardContainer />
-        </Row>
+        <SearchContext.Provider value="">
+          <Row>
+            <CardContainer />
+          </Row>
+        </SearchContext.Provider>
       </EmployeeContext.Provider>
     </div>
   );

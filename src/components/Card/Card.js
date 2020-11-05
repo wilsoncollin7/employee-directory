@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import EmployeeContext from "../../utils/EmployeeContext";
+import SearchContext from "../../utils/SearchContext";
 // style
 import "./style.css";
 // import component
@@ -7,7 +7,7 @@ import Table from "../Table/Table";
 
 function Card() {
 
-  const employees = useContext(EmployeeContext);
+  const search = useContext(SearchContext);
 
   return (
     <div className="card shadow">
