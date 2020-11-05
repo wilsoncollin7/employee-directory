@@ -6,7 +6,6 @@ const EmployeeContext = createContext({
   employeesSorted: [],
   employees: [],
   onClick: () => undefined,
-  handleInputChange: () => undefined
 });
 
 export default EmployeeContext;

@@ -7,7 +7,7 @@ import Table from "../Table/Table";
 
 function Card() {
 
-  const search = useContext(SearchContext);
+  const {search, setSearch} = useContext(SearchContext);
 
   return (
     <div className="card shadow">
@@ -18,6 +18,7 @@ function Card() {
           type="text" 
           className="form-control" 
           placeholder="Name"
+          onChange={() => setSearch(document.querySelector(".form-control").value)}
         />
         <Table />
       </div>

@@ -8,6 +8,10 @@ import SearchContext from "../utils/SearchContext";
 
 function Directory() {
 
+  const [search, setSearch] = useState({
+    searchField: ""
+  })
+
   const [employees, setEmployees] = useState({
     sortedField: null,
     employeesSorted: [],
@@ -36,7 +40,7 @@ function Directory() {
     <div>
       <h1>Employees</h1>
       <EmployeeContext.Provider value={employees}>
-        <SearchContext.Provider value="">
+        <SearchContext.Provider value={{search, setSearch}}>
           <Row>
             <CardContainer />
           </Row>
