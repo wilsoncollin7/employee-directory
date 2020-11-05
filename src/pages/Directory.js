@@ -8,22 +8,18 @@ import SearchContext from "../utils/SearchContext";
 
 function Directory() {
 
-  const [search, setSearch] = useState({
-    searchField: ""
-  })
+  const [search, setSearch] = useState("")
 
   const [employees, setEmployees] = useState({
     sortedField: null,
-    employeesSorted: [],
+    employeesSorted: employeesJson,
     onClick: (sortedField) => {
       setEmployees({...employees, sortedField});
     },
   });
 
-  let sortedEmployees = [...employeesJson];
-
   if (employees.sortedField !== null) {
-    sortedEmployees.sort((a, b) => {
+    employees.employeesSorted.sort((a, b) => {
       if (a[employees.sortedField] < b[employees.sortedField]) {
         return -1;
       }
@@ -34,7 +30,26 @@ function Directory() {
     });
   }
 
-  employees.employeesSorted = sortedEmployees;
+  console.log(search)
+
+  let employeesFiltered = [];
+
+  if (search.length !== 0) {
+    employeesJson.map(employee => {
+      if (employee.firstName.includes(search) || employee.lastName.includes(search)) {
+        console.log("included")
+        employeesFiltered.push(employee);
+      } else {
+        console.log("not included")
+      }
+    })
+    employees.employeesSorted = employeesFiltered
+  } else {
+    console.log("no search")
+    employees.employeesSorted = employeesJson
+  }
+
+  
 
   return(
     <div>

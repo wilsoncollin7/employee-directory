@@ -7,7 +7,7 @@ import Table from "../Table/Table";
 
 function Card() {
 
-  const {search, setSearch} = useContext(SearchContext);
+  const {setSearch} = useContext(SearchContext);
 
   return (
     <div className="card shadow">

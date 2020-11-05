@@ -1,7 +1,5 @@
 import { createContext } from "react";
 
-const SearchContext = createContext({
-  searchField: "",
-});
+const SearchContext = createContext("");
 
 export default SearchContext;
