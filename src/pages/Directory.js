@@ -2,14 +2,16 @@ import React, { useState } from "react";
 // import components
 import CardContainer from "../components/CardContainer/CardContainer";
 import Row from "../components/Row/Row";
+// import data
 import employeesJson from "../Data/employees.json";
+// import context
 import EmployeeContext from "../utils/EmployeeContext";
 import SearchContext from "../utils/SearchContext";
 
 function Directory() {
 
   const [search, setSearch] = useState("")
-
+  // employee state
   const [employees, setEmployees] = useState({
     sortedField: null,
     employeesSorted: employeesJson,
@@ -17,7 +19,7 @@ function Directory() {
       setEmployees({...employees, sortedField});
     },
   });
-
+  // sorting logic
   if (employees.sortedField !== null) {
     employees.employeesSorted.sort((a, b) => {
       if (a[employees.sortedField] < b[employees.sortedField]) {
@@ -30,30 +32,22 @@ function Directory() {
     });
   }
 
-  console.log(search)
-
   let employeesFiltered = [];
-
+  // filter logic
   if (search.length !== 0) {
     employeesJson.map(employee => {
       if (employee.firstName.includes(search) || employee.lastName.includes(search)) {
-        console.log("included")
         employeesFiltered.push(employee);
-      } else {
-        console.log("not included")
       }
+      return "all good!";
     })
-    employees.employeesSorted = employeesFiltered
+    employees.employeesSorted = employeesFiltered;
   } else {
-    console.log("no search")
-    employees.employeesSorted = employeesJson
+    employees.employeesSorted = employeesJson;
   }
-
-  
 
   return(
     <div>
-      <h1>Employees</h1>
       <EmployeeContext.Provider value={employees}>
         <SearchContext.Provider value={{search, setSearch}}>
           <Row>
