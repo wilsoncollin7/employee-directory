@@ -36,7 +36,9 @@ function Directory() {
   // filter logic
   if (search.length !== 0) {
     employeesJson.map(employee => {
-      if (employee.firstName.includes(search) || employee.lastName.includes(search)) {
+      const firstName = employee.firstName.toLowerCase();
+      const lastName = employee.lastName.toLowerCase();
+      if (firstName.includes(search) || lastName.includes(search)) {
         employeesFiltered.push(employee);
       }
       return "all good!";

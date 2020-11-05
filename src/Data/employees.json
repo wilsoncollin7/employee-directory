@@ -1,100 +1,100 @@
 [
   {
     "id": 1,
-    "firstName": "collin",
-    "lastName": "wilson",
+    "firstName": "Collin",
+    "lastName": "Wilson",
     "phone":  "(542) 252-9962",
-    "email": "collin@FakeEmail.com"
+    "email": "Collin@FakeEmail.com"
   },
   {
     "id": 2,
-    "firstName": "craig",
-    "lastName": "smith",
+    "firstName": "Craig",
+    "lastName": "Smith",
     "phone":  "(704) 454-3365",
-    "email": "craig@FakeEmail.com"
+    "email": "Craig@FakeEmail.com"
   },
   {
     "id": 3,
-    "firstName": "josh",
-    "lastName": "brian",
+    "firstName": "Josh",
+    "lastName": "Brian",
     "phone":  "(704) 365-1457",
-    "email": "josh@FakeEmail.com"
+    "email": "Josh@FakeEmail.com"
   },
   {
     "id": 4,
-    "firstName": "jesse",
-    "lastName": "stanley",
+    "firstName": "Jesse",
+    "lastName": "Stanley",
     "phone":  "(256) 368-1583",
-    "email": "jesse@FakeEmail.com"
+    "email": "Jesse@FakeEmail.com"
   },
   {
     "id": 5,
-    "firstName": "dean",
-    "lastName": "king",
+    "firstName": "Dean",
+    "lastName": "King",
     "phone":  "(910) 252-1587",
-    "email": "dean@FakeEmail.com"
+    "email": "Dean@FakeEmail.com"
   },
   {
     "id": 6,
-    "firstName": "bill",
-    "lastName": "o'donald",
+    "firstName": "Bill",
+    "lastName": "O'Donald",
     "phone":  "(252) 474-2563",
-    "email": "bill@FakeEmail.com"
+    "email": "Bill@FakeEmail.com"
   },
   {
     "id": 7,
-    "firstName": "winston",
-    "lastName": "allen",
+    "firstName": "Winston",
+    "lastName": "Allen",
     "phone":  "(704) 898-4563",
-    "email": "winston@FakeEmail.com"
+    "email": "Winston@FakeEmail.com"
   },
   {
     "id": 8,
-    "firstName": "harold",
-    "lastName": "meegan",
+    "firstName": "Harold",
+    "lastName": "Meegan",
     "phone":  "(910) 252-7896",
-    "email": "harold@FakeEmail.com"
+    "email": "Harold@FakeEmail.com"
   },
   {
     "id": 9,
-    "firstName": "john",
-    "lastName": "seth",
+    "firstName": "John",
+    "lastName": "Seth",
     "phone":  "(547) 134-1245",
-    "email": "john@FakeEmail.com"
+    "email": "John@FakeEmail.com"
   },
   {
     "id": 10,
-    "firstName": "bob",
-    "lastName": "johnson",
+    "firstName": "Bob",
+    "lastName": "Johnson",
     "phone":  "(252) 363-2356",
-    "email": "bob@FakeEmail.com"
+    "email": "Bob@FakeEmail.com"
   },
   {
     "id": 11,
-    "firstName": "mike",
-    "lastName": "rowe",
+    "firstName": "Mike",
+    "lastName": "Rowe",
     "phone":  "(704) 910-1489",
-    "email": "mike@FakeEmail.com"
+    "email": "Mike@FakeEmail.com"
   },
   {
     "id": 12,
-    "firstName": "jessica",
-    "lastName": "simpson",
+    "firstName": "Jessica",
+    "lastName": "Simpson",
     "phone":  "(252) 555-2789",
-    "email": "jessica@FakeEmail.com"
+    "email": "Jessica@FakeEmail.com"
   },
   {
     "id": 13,
-    "firstName": "britney",
-    "lastName": "charles",
+    "firstName": "Britney",
+    "lastName": "Charles",
     "phone":  "(910) 456-3654",
-    "email": "britney@FakeEmail.com"
+    "email": "Britney@FakeEmail.com"
   },
   {
     "id": 14,
-    "firstName": "sarah",
-    "lastName": "stacey",
+    "firstName": "Sarah",
+    "lastName": "Stacey",
     "phone":  "(910) 789-1987",
-    "email": "sarah@FakeEmail.com"
+    "email": "Sarah@FakeEmail.com"
   }
 ]
