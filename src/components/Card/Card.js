@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import EmployeeContext from "../../utils/EmployeeContext";
 // style
 import "./style.css";
 // import component
 import Table from "../Table/Table";
 
 function Card() {
+
+  const employees = useContext(EmployeeContext);
+
   return (
     <div className="card shadow">
       <div className="card-body">

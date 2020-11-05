@@ -9,10 +9,14 @@ function Directory() {
 
   const [employees, setEmployees] = useState({
     sortedField: null,
+    searchField: "",
     employeesSorted: [],
     onClick: (sortedField) => {
       setEmployees({...employees, sortedField});
     },
+    onChange: (searchField) => {
+      setEmployees({...employees, searchField})
+    }
   });
 
   let sortedEmployees = [...employeesJson];
